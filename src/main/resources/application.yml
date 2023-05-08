@@ -1,0 +1,18 @@
+server:
+  port: 9201
+
+spring:
+  application:
+    name: movie-app
+
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    url: 'jdbc:mysql://localhost:3306/movie_db'
+    password: 12345678
+
+  jpa:
+    generate-ddl: 'true'
+    database-platform: org.hibernate.dialect.MySQL5Dialect
+    hibernate:
+      ddl-auto: update
