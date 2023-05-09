@@ -31,7 +31,4 @@ public class MovieService {
     public List<Movie> getMoviesByTitle(String title) {
         return movieRepository.findMovieByTitle(title);
     }
-
-
-
 }
